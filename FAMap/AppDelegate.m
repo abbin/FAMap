@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+@import GoogleMaps;
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -16,7 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"AIzaSyD6PMkkD1Ecqyhm1E3BWAag-JX-5tQbRU4"];
+    [FIRApp configure];
+    [FIRDatabase database].persistenceEnabled = YES;
     return YES;
 }
 

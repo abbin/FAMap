@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018CDC2C43907B5767233D04 /* libPods-FAMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF787443D99751935974523 /* libPods-FAMap.a */; };
 		ED5F29BA1D75DD3C00DB3178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5F29B91D75DD3C00DB3178 /* main.m */; };
 		ED5F29BD1D75DD3C00DB3178 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5F29BC1D75DD3C00DB3178 /* AppDelegate.m */; };
 		ED5F29C01D75DD3C00DB3178 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5F29BF1D75DD3C00DB3178 /* ViewController.m */; };
 		ED5F29C31D75DD3C00DB3178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5F29C11D75DD3C00DB3178 /* Main.storyboard */; };
 		ED5F29C51D75DD3C00DB3178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5F29C41D75DD3C00DB3178 /* Assets.xcassets */; };
 		ED5F29C81D75DD3C00DB3178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5F29C61D75DD3C00DB3178 /* LaunchScreen.storyboard */; };
+		ED5F29D01D75E65500DB3178 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED5F29CF1D75E65500DB3178 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6426FB902B32CCF1CA12DEE3 /* Pods-FAMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FAMap/Pods-FAMap.debug.xcconfig"; sourceTree = "<group>"; };
+		93BF9842212F377F8132FA27 /* Pods-FAMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FAMap/Pods-FAMap.release.xcconfig"; sourceTree = "<group>"; };
+		DEF787443D99751935974523 /* libPods-FAMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FAMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5F29B51D75DD3C00DB3178 /* FAMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5F29B91D75DD3C00DB3178 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED5F29BB1D75DD3C00DB3178 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		ED5F29C41D75DD3C00DB3178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5F29C71D75DD3C00DB3178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5F29C91D75DD3C00DB3178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5F29CF1D75E65500DB3178 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018CDC2C43907B5767233D04 /* libPods-FAMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848657BC77C1949B549ED001 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6426FB902B32CCF1CA12DEE3 /* Pods-FAMap.debug.xcconfig */,
+				93BF9842212F377F8132FA27 /* Pods-FAMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B1CB9424129FF4C7418BC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF787443D99751935974523 /* libPods-FAMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED5F29AC1D75DD3C00DB3178 = {
 			isa = PBXGroup;
 			children = (
 				ED5F29B71D75DD3C00DB3178 /* FAMap */,
 				ED5F29B61D75DD3C00DB3178 /* Products */,
+				848657BC77C1949B549ED001 /* Pods */,
+				9B1CB9424129FF4C7418BC46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				ED5F29C41D75DD3C00DB3178 /* Assets.xcassets */,
 				ED5F29C61D75DD3C00DB3178 /* LaunchScreen.storyboard */,
 				ED5F29C91D75DD3C00DB3178 /* Info.plist */,
+				ED5F29CF1D75E65500DB3178 /* GoogleService-Info.plist */,
 				ED5F29B81D75DD3C00DB3178 /* Supporting Files */,
 			);
 			path = FAMap;
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED5F29CC1D75DD3C00DB3178 /* Build configuration list for PBXNativeTarget "FAMap" */;
 			buildPhases = (
+				B060B46BE521F0E1B82F9E72 /* [CP] Check Pods Manifest.lock */,
 				ED5F29B11D75DD3C00DB3178 /* Sources */,
 				ED5F29B21D75DD3C00DB3178 /* Frameworks */,
 				ED5F29B31D75DD3C00DB3178 /* Resources */,
+				55BE9DB80B641354C6711289 /* [CP] Embed Pods Frameworks */,
+				AF7D38BEAC8A604C4BBEA3DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +140,7 @@
 				TargetAttributes = {
 					ED5F29B41D75DD3C00DB3178 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EDXP6Y48QS;
 					};
 				};
 			};
@@ -137,12 +168,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5F29C81D75DD3C00DB3178 /* LaunchScreen.storyboard in Resources */,
+				ED5F29D01D75E65500DB3178 /* GoogleService-Info.plist in Resources */,
 				ED5F29C51D75DD3C00DB3178 /* Assets.xcassets in Resources */,
 				ED5F29C31D75DD3C00DB3178 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55BE9DB80B641354C6711289 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FAMap/Pods-FAMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7D38BEAC8A604C4BBEA3DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FAMap/Pods-FAMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B060B46BE521F0E1B82F9E72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED5F29B11D75DD3C00DB3178 /* Sources */ = {
@@ -195,6 +275,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -217,6 +298,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -240,7 +322,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -255,6 +338,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -263,22 +347,26 @@
 		};
 		ED5F29CD1D75DD3C00DB3178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6426FB902B32CCF1CA12DEE3 /* Pods-FAMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FAMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuudapp.FAMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuudapp.Fuudapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		ED5F29CE1D75DD3C00DB3178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BF9842212F377F8132FA27 /* Pods-FAMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = FAMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuudapp.FAMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuudapp.Fuudapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -302,6 +390,7 @@
 				ED5F29CE1D75DD3C00DB3178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
