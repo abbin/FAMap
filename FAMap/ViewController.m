@@ -46,6 +46,7 @@
     FIRDatabaseReference *ref = [[[FIRDatabase database] reference] child:@"items"];
     [ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot) {
         if (snapshot.value != [NSNull null]) {
+            [self.mapView clear];
             NSArray *itemsArray = [snapshot.value allValues];
             for (NSMutableDictionary *item in itemsArray) {
                 double lat = [[item objectForKey:@"restaurant_latitude"] doubleValue];
